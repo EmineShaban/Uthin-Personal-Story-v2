@@ -35,7 +35,42 @@ h2{
 }
 
 .hero{
-    background-color: white;
-    width: 100%;
-    
+    background-color: white; 
+
+}
+
+.hero-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: right;
+}
+
+
+.hero-content h3{
+    color: brown;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.hero-div img{
+    display: block;
+    margin: 10px;
+}
+
+.uthin{
+    color: red;
+    font-weight: 800;
+}
+
+.center{
+    color: brown;
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
 }
