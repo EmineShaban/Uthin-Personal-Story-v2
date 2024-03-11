@@ -6,7 +6,7 @@ body {
 .container {
   width: 60%;
   margin: auto;
-} 
+}
 h1,
 h2,
 h3,
@@ -20,57 +20,121 @@ a {
   letter-spacing: 1px;
 }
 
-
-h1{
-    text-align: center;
-    color: red;
-    font-weight: 900;
+h1 {
+  text-align: center;
+  color: red;
+  font-weight: 900;
 }
 
-
-h2{
-    text-align: center;
-    color: red;
-    font-weight: 700;
+h2 {
+  text-align: center;
+  color: red;
+  font-weight: 700;
 }
 
-.hero{
-    background-color: white; 
-
+.hero {
+  background-color: white;
 }
 
-.hero-div{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.hero-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.hero-content{
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    text-align: right;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
 }
 
-
-.hero-content h3{
-    color: brown;
-    font-size: 30px;
-    font-weight: 700;
+.hero-content h3 {
+  color: brown;
+  font-size: 30px;
+  font-weight: 700;
 }
 
-.hero-div img{
-    display: block;
-    margin: 10px;
+.hero-div img {
+  display: block;
+  margin: 10px auto;
 }
 
-.uthin{
-    color: red;
-    font-weight: 800;
+.uthin {
+  color: red;
+  font-weight: 800;
 }
 
-.center{
-    color: brown;
-    text-align: center;
-    font-weight: 800;
-    font-size: 24px;
+.center {
+  color: brown;
+  text-align: center;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.bef-aft {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 40px;
+  width: 80%;
+  margin: auto;
+}
+.before p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  color: brown;
+}
+.before ul li {
+  list-style: circle;
+  margin: 5px 0;
+}
+.before {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bef-aft-div {
+  background-color: white;
+}
+
+.before img {
+  margin: 25px auto;
+}
+
+.banner {
+  background-image: url(https://lesthe.com/cdn/uthin/assets_1.0/images/DROP\ SACHET.webp);
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.banner-text {
+  color: white;
+  background-color: #f08c15;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 100%;
+  text-align: center;
+  padding: 35px 0px;
+  font-weight: 800;
+  font-size: 25px;
+  margin: 15px 0px 5px 0px;
+}
+
+.banner-text a {
+  background-color: #34469e;
+  padding: 15px 30px;
+  display: block;
+  width: 25%;
+  margin: auto;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
 }
