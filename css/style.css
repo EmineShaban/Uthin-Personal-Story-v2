@@ -1,266 +1,417 @@
-    body {
-        font-family: "Inter", sans-serif;
-        background-color: rgba(242, 236, 236, 0.477);
-    }
-    
-    img {
-        width: 100%;
-    }
-    
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgba(242, 236, 236, 0.477);
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.yellow {
+    background-color: #f08c15;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    width: 70%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+.hero {
+    background-color: white;
+}
+
+.hero-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.hero-content h3 {
+    color: brown;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.hero-div img {
+    display: block;
+    margin: 10px auto;
+    width: 35%;
+}
+
+.uthin {
+    color: red;
+    font-weight: 800;
+}
+
+.center {
+    color: brown;
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.bef-aft {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.before p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: brown;
+}
+
+.before ul li {
+    list-style: circle;
+    margin: 5px 0;
+}
+
+.before {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bef-aft-div {
+    background-color: white;
+}
+
+.before img {
+    margin: 25px auto;
+}
+
+.banner {
+    background-image: url(https://lesthe.com/cdn/uthin/assets_1.0/images/DROP\ SACHET.webp);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.banner-text {
+    color: white;
+    background-color: #f08c15;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 100%;
+    text-align: center;
+    padding: 35px 0px;
+    font-weight: 800;
+    font-size: 25px;
+    margin: 15px 0px 5px 0px;
+}
+
+.banner-text a {
+    background-color: #34469e;
+    padding: 15px 30px;
+    display: block;
+    width: 25%;
+    margin: auto;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.img {
+    width: 70px;
+    margin-right: 20px;
+}
+
+.sw {
+    display: flex;
+    flex-direction: row;
+}
+
+.swiper-slide-div {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comments h3 {
+    text-align: center;
+}
+
+.comments {
+    margin: 50px auto;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0;
+}
+
+footer div.links {
+    text-align: center;
+    margin: 3vh;
+}
+
+footer a {
+    margin: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+footer p {
+    text-align: center;
+    letter-spacing: 0.7px;
+    line-height: 1;
+}
+
+.product {
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: -40px;
+}
+
+.banner1 img {
+    display: block;
+    width: 20%;
+    margin: auto;
+}
+
+.banner1 a {
+    background-color: #34469e;
+    padding: 15px 30px;
+    display: block;
+    width: 20%;
+    margin: 25px auto;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.banner1 a span {
+    color: #f08c15;
+    font-weight: 900;
+}
+
+.sport {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sport img {
+    width: 50%;
+}
+
+.swiper-wrapper {
+    align-items: stretch;
+}
+
+@media only screen and (max-width: 1500px) {
     .container {
-        width: 60%;
-        margin: auto;
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    li,
-    a {
-        line-height: 1.4;
-        letter-spacing: 1px;
-    }
-    
-    .yellow {
-        background-color: #f08c15;
-        padding: 20px;
-    }
-    
-    h1 {
-        text-align: center;
-        color: white;
-        font-weight: 800;
         width: 70%;
-        margin: auto;
     }
-    
-    h2 {
-        text-align: center;
-        color: white;
-        font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 75%;
+
     }
-    
-    .hero {
-        background-color: white;
+
+    .banner-text a {
+        width: 40%;
     }
-    
-    .hero-div {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: right;
-    }
-    
-    .hero-content h3 {
-        color: brown;
-        font-size: 30px;
-        font-weight: 700;
-    }
-    
-    .hero-div img {
-        display: block;
-        margin: 10px auto;
+
+    .banner1 a {
         width: 35%;
     }
-    
-    .uthin {
-        color: red;
-        font-weight: 800;
+}
+
+
+@media only screen and (max-width: 994px) {
+    .banner1 img {
+        width: 45%;
     }
-    
-    .center {
-        color: brown;
-        text-align: center;
-        font-weight: 800;
-        font-size: 24px;
+
+    .banner-text a {
+        width: 50%;
     }
-    
+
+    .banner-text h3 {
+        width: 70%;
+        margin: 10px auto;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .product {
+        width: 75%;
+    }
+
+    h1 {
+        width: 90%;
+        z-index: 5;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    .hero-div {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .hero-div img {
+        margin-top: -100px;
+        width: 40%;
+
+    }
+
+    .hero-content {
+        z-index: 5;
+    }
+
     .bef-aft {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 40px;
-        padding: 40px;
-        width: 80%;
-        margin: auto;
+        grid-template-columns: 1fr;
     }
-    
-    .before p {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 700;
-        color: brown;
+
+    .banner-text h3 {
+        width: 90%;
+        margin: 10px auto;
     }
-    
-    .before ul li {
-        list-style: circle;
-        margin: 5px 0;
-    }
-    
-    .before {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .bef-aft-div {
-        background-color: white;
-    }
-    
-    .before img {
-        margin: 25px auto;
-    }
-    
-    .banner {
-        background-image: url(https://lesthe.com/cdn/uthin/assets_1.0/images/DROP\ SACHET.webp);
-        height: 400px;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 40px 0;
-    }
-    
-    .banner-text {
-        color: white;
-        background-color: #f08c15;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-        width: 100%;
-        text-align: center;
-        padding: 35px 0px;
-        font-weight: 800;
-        font-size: 25px;
-        margin: 15px 0px 5px 0px;
-    }
-    
+
     .banner-text a {
-        background-color: #34469e;
-        padding: 15px 30px;
-        display: block;
-        width: 25%;
-        margin: auto;
-        border-radius: 25px;
-        color: #fff;
-        font-size: 20px;
-        text-transform: uppercase;
+        width: 70%;
     }
-    
-    .img {
-        width: 70px;
-        margin-right: 20px;
-    }
-    
-    .sw {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .swiper-slide-div {
-        margin: 30px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .swiper-slide {
-        display: block;
-    }
-    
-    .comments h3 {
-        text-align: center;
-    }
-    
-    .comments {
-        margin: 50px auto;
-    }
-    
-    .swiper-slide-div {
-        display: flex!important;
-        align-items: stretch!important;
-    }
-    /* footer */
-    
-    footer {
-        margin-top: 40px;
-    }
-    
-    footer ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    footer ul li {
-        margin: 0;
-    }
-    
-    footer div.links {
-        text-align: center;
-        margin: 3vh;
-    }
-    
-    footer a {
-        margin: 5px 10px;
-        text-align: center;
-        text-decoration: none;
-        color: black;
-        font-weight: 400;
-    }
-    
-    footer p {
-        text-align: center;
-        letter-spacing: 0.7px;
-        line-height: 1;
-    }
-    
-    .product {
-        width: 50%;
-        display: block;
-        margin: auto;
-        margin-top: -40px;
-    }
-    
-    .banner1 img {
-        display: block;
-        width: 20%;
-        margin: auto;
-    }
-    
+
     .banner1 a {
-        background-color: #34469e;
-        padding: 15px 30px;
-        display: block;
-        width: 20%;
-        margin: 25px auto;
-        border-radius: 25px;
-        color: #fff;
+        width: 55%;
+    }
+
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero-content h3 {
         font-size: 20px;
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 600;
     }
-    
-    .banner1 a span {
-        color: #f08c15;
-        font-weight: 900;
+
+    .hero-div img {
+        margin-top: -130px;
+        width: 40%;
+        margin-left: 30px;
     }
-    
+
+    .sport img {
+        width: 100%;
+    }
+
     .sport {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
     }
-    
-    .sport img {
-        width: 50%;
+
+    .product {
+        width: 80%;
     }
+
+    .banner-text {
+        font-size: 19px;
+
+    }
+
+    .banner-text a {
+        font-size: 14px;
+    }
+
+    .banner1 img {
+        width: 75%;
+    }
+
+    .banner1 a {
+        width: 75%;
+        font-size: 16px;
+
+    }
+
+    .yellow {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bef-aft {
+        gap: 20px;
+        padding: 20px;
+    }
+}
